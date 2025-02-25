@@ -1,6 +1,8 @@
 class Animal:
-    def __init__(self, name, age, color, hp = 100):
+    def __init__(self, name, species, gender, age, color, hp = 100):
         self.__name = name 
+        self.__species = species
+        self.__gender = gender
         self.__age = age
         self.__color = color
         self.__hp = hp
@@ -20,5 +22,25 @@ class Animal:
     def rest(self):
         print ("HUFF")
         print (f'You have {self.__hp}, hp left in the tank (+1 hp)')
+
+    def walk(self, walk):
+        self.__walk = walk
+        print("I hate to", self.__walk)
+    
+    def lift(self,lift):
+        self.__lift = lift
+        print("I can lift more than", self.__lift)
+
+    def talk(self):
+        print(self.__name)
+
+    def print_species(self):
+        print("I am a",self.__species)
+
+    def print_gender(self):
+        print("I am a",self.__gender)
+
+    def excrete_waste(self):
+        print("I have excreted my waste")
     
 
