@@ -13,5 +13,6 @@ class Animal:
     
     def lift(self,lift):
         self.__lift = lift
-        print("I can lift", self.__lift)
+        print("I can lift more than", self.__lift)
+
 
