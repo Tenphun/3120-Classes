@@ -6,6 +6,15 @@ class Animal:
         print("hello I am", self.__name)
 
 
+
+    def walk(self, walk):
+        self.__walk = walk
+        print("I hate to", self.__walk)
+    
+    def lift(self,lift):
+        self.__lift = lift
+        print("I can lift more than", self.__lift)
+
     def talk(self):
         print(self.__name)
 
