@@ -44,3 +44,14 @@ class Animal:
         print("I have excreted my waste")
     
 
+    def eat(self):
+        print(self.__name, "is eating.")
+
+    def sleep(self):
+        print(self.__name, "is sleeping.")
+
+    def cry(self):
+        print(self.__name, "is crying.")
+
+    def running(self):
+        print(self.__name, "is running")
