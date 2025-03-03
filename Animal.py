@@ -1,4 +1,12 @@
-class Animal:
+class Animal
+    def __init__(self, name, age, height, weight, diet): 
+        self.__name = name  
+        self.__age = age
+        self.__height = height
+        self.__weight = weight
+        self.__diet = diet
+        print(f"Hello, I am {self.__name}!")
+        
     def __init__(self, name, species, gender, age, color, hp = 100):
         self.__name = name 
         self.__species = species
@@ -32,17 +40,21 @@ class Animal:
         print("I can lift more than", self.__lift)
 
     def talk(self):
-        print(self.__name)
+        print("Hi *animal noises*!")
 
-    def print_species(self):
-        print("I am a",self.__species)
+    def get_age(self):
+        print(f"I am {self.__age} years old")
 
-    def print_gender(self):
-        print("I am a",self.__gender)
+    def get_height(self):
+        print(f"I am {self.__height} inches tall")
+        
+    def get_weight(self):
+        print(f"I weigh {self.__weight} lbs")
 
+    def get_diet(self):
+        print(f"My diet consists of {self.__diet}")
     def excrete_waste(self):
-        print("I have excreted my waste")
-    
+        print("I have excreted my waste"
 
     def eat(self):
         print(self.__name, "is eating.")
